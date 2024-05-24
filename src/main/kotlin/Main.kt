@@ -1,5 +1,8 @@
 package org.example
 
-fun main() {
-    println("Hello World!")
+
+suspend fun main() {
+    val lyricsWebScraper = LyricsWebScraper()
+    val result = lyricsWebScraper.scrapeURL(url = "https://www.lyrics.com/")
+    println(result)
 }
